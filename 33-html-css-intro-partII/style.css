@@ -1,0 +1,67 @@
+
+.form div {
+    margin: 20px 5px;
+}
+.form {
+    text-align: center;
+    background-color: aliceblue;
+    width: 100%;
+    padding: 15px 0px 20px 0px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.submit{
+ background-color: #ffffff;
+ color: red;
+ border: 0.5px solid black;
+ padding: 12px 30px;
+ cursor: pointer;
+}
+
+.submit:hover {
+    background-color: #daabab;
+    color: white;
+    transition: background-color 500ms ease;
+}
+
+.transition-sec{
+    padding: 20px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.shelf{
+    width: 50%;
+    border-radius: 10px;
+    border: 1px dashed #778899  ;
+    display: flex;
+}
+
+.box1 , .box2 , .box3 {
+    margin: 5px;
+    border-radius: 10px;
+    width: 32%;
+    height: 100px;
+    background-color: #80bfff;
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+
+.box1:active , .box2:active , .box3:active  {
+    width: 60%;
+    background-color: #ff9999;
+}
+
+
+
+
+
+
+
+
+
+

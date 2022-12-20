@@ -1,0 +1,99 @@
+.sidebar {
+  width: 230px;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  // max-height: 1320px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  // position: fixed;
+
+  &_background {
+    background-color: $sidebarBackgroundColor;
+  }
+
+  &--logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+  }
+  &__list {
+    width: 83%;
+  }
+  .logofigure {
+    margin: 0;
+    &__icon {
+      margin-bottom: 12px;
+    }
+    &__player {
+      margin-bottom: 4px;
+    }
+  }
+
+  .logo {
+    display: block;
+  }
+  .list {
+    list-style: none;
+
+    padding: 0;
+    padding-top: 4;
+  }
+
+  .item {
+    position: relative;
+
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 52px;
+
+    margin-bottom: 24px;
+
+    cursor: pointer;
+
+    &--homeIcon::after {
+      @include icon-style("../logos/svg/linear/home-2.svg");
+    }
+    &--searchIcon::after {
+      @include icon-style("../logos/svg/linear/discover.svg");
+    }
+    &--playIcon::after {
+      @include icon-style("../logos/svg/linear/play.svg");
+    }
+    &--likeIcon::after {
+      @include icon-style("../logos/svg/linear/heart.svg");
+    }
+    &--listIcon::after {
+      @include icon-style("../logos/svg/linear/receipt-square.svg");
+    }
+    &--uploadIcon::after {
+      @include icon-style("../logos/main-icons/linear/import.png");
+      filter: none;
+    }
+
+    &--active {
+      border-right: 2px solid $selectedItemSidbar;
+      border-bottom-right-radius: 1px;
+      border-top-right-radius: 1px;
+
+      a {
+        color: $orange;
+      }
+    }
+  }
+
+  .link {
+    color: $sidebarFont;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}

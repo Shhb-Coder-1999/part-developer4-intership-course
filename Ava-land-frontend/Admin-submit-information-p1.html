@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="http://fonts.cdnfonts.com/css/roboto" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Admin-submit-information-p1</title>
+  </head>
+  <body>
+    <div class="app app--dark" dir="RTL">
+      <nav class="mobileNav">
+        <a href="#" class="blocIcon mobileNav__blocIcon">
+          <img
+            class="blocIcon__img"
+            src="./assets/logos/svg/bold/home-2.svg"
+            alt=""
+          /><br />
+          <span class="blocIcon__title">صفحه اصلی</span>
+        </a>
+        <a href="#" class="blocIcon mobileNav__blocIcon">
+          <img
+            class="blocIcon__img"
+            src="./assets/logos/svg/bold/heart.svg"
+            alt=""
+          /><br />
+          <span class="blocIcon__title">محبوب ترین ها</span>
+        </a>
+        <a href="#" class="blocIcon mobileNav__blocIcon">
+          <img
+            class="blocIcon__img"
+            src="./assets/logos/svg/bold/receipt-square.svg"
+            alt=""
+          /><br />
+          <span class="blocIcon__title">لیست منتخب</span>
+        </a>
+        <a href="#" class="blocIcon mobileNav__selectedBlocIcon">
+          <img
+            class="blocIcon__selectedImg"
+            src="./assets/logos/svg/bold/orangeImport.svg"
+            alt=""
+          /><br />
+          <span class="blocIcon__selectedTitle">آپلود آهنگ</span>
+        </a>
+      </nav>
+      <aside class="sidebar sidebar_background">
+        <div class="logoconteiner sidebar__logoconteiner sidebar--logo">
+          <figure class="logofigure logofigure__icon">
+            <img
+              class="logo"
+              src="./assets/logos/avaland-logo.png"
+              alt="avaland.favico"
+            />
+          </figure>
+          <figure class="logofigure logofigure__player">
+            <img class="logo" src="./assets/images/player.png" alt="player" />
+          </figure>
+          <figure class="logofigure">
+            <img
+              class="logo"
+              src="./assets/images/music-player.png"
+              alt="music-player"
+            />
+          </figure>
+        </div>
+
+        <ul class="list sidebar__list">
+          <li class="item list__item item--homeIcon">
+            <a class="link">صفحه‌اصلی</a>
+          </li>
+          <li class="item list__item item--searchIcon">
+            <a class="link">جستجو</a>
+          </li>
+          <li class="item list__item item--playIcon">
+            <a class="link">پخش‌آهنگ</a>
+          </li>
+          <li class="item list__item item--likeIcon">
+            <a class="link">محبوب‌ترین‌ها</a>
+          </li>
+          <li class="item list__item item--listIcon">
+            <a class="link">لیست‌پخش‌منتخب</a>
+          </li>
+          <li class="item list__item item--uploadIcon item--active">
+            <a class="link">آپلودآهنگ</a>
+          </li>
+        </ul>
+      </aside>
+      <div class="app__container">
+        <header class="header container__header">
+          <nav class="nav header__nav" dir="rtl">
+              <div class="searchbox nav__searchbox">
+                  <figure class="searchfigurelogo searchbox__searchfigurelogo">
+                      <img class="searchfigurelogo__searchlogo" src="./assets/logos/svg/linear/search-normal.svg" alt="search-normal">
+                  </figure>
+                  <input type="text" name="" placeholder="جستجو..." id="" class="searchbox__searchinput">            
+                  <div class="btns searchbox__btns">
+                      <input type="checkbox" name="avaz" id="avaz">
+                              <label for="avaz" class="avaz btn btns__btn"><p>آواز</p></label>
+                              
+                              <input type="checkbox" name="irani" id="irani">
+                              <label for="irani" class="irani btn btns__btn">ایرانی</label>
+              
+                              <input type="checkbox" name="sonati" id="sonati">
+                              <label for="sonati" class="sonati btn btns__btn">سنتی</label>
+                  </div>
+                  <hr class="hr searchbox__hr">
+                  <div class="filterparent searchbox__filterparent">
+                      <button class="filter filterdesktop filterparent__filter">فیلتر</button>
+                      <button class="filter filtermobile filterparent__filter"></button>
+  
+                  </div>
+              </div>
+      
+      
+      
+      
+              <div class="profilecontainer nav__profilecontainer">
+                  <div class="profile profilecontainer__profile">
+                      <a class="number profile__number ">۰۹۱۵۴۰۶۴۹۸۷</a>
+                      <figure class="profilefigure number__profilefigure">
+                          <img src="./assets/logos/bottom-arrow.png" alt="bottom-arrow">
+                      </figure>
+                  </div>
+              </div>
+                  
+          </nav>
+      </header>
+        <main class="main">
+          <div class="breadcrumbs main__breadcrumbs" dir="rtl">
+            <a href="" class="breadcrumbs__link active">بارگذاری‌آهنگ</a>
+            <figure class="figurevector breadcrumbs__figurevector">
+                <img class="breadcrumbs__vector" src="./assets/logos/svg/linear/Vector.svg" alt="">
+            </figure>
+            <a href="" class="breadcrumbs__link">ذخیره‌اطلاعات</a>
+          </div>
+
+          <div class="uploadfeature main__uploadfeature">
+            <p class="uploadfeature__title">بارگذاری‌آهنگ</p>
+
+            <div class="box uploadfeature__box">
+
+              <div class="box__dragarea">
+                  
+                  <div class="upload dragarea__upload">
+                      <label  class="dragarea__label" for="file"><span>در حال بارگذاری فایل</span>
+                      </label>            
+                      <progress class="upload__progress" dir="ltr"  value="50"  max="100">  </progress>
+                  </div>
+                  
+                  
+  
+  
+                  <input class="dragarea__input" type="file" name="files" id="files" title="کلیک کنید">
+  
+                 
+              </div>
+              <div class="guide uploadfeature__guide">
+                  <figure class="guide__figure">
+                      <img src="./assets/logos/svg/bold/Vector.svg" alt="warn">
+                  </figure>
+                  <p class="guide__paragraph">
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                  </p>
+              </div>
+              
+          </div>
+          </div>
+
+          <form action="" class="form main__form">
+            <div class="music-info form__music-info main__music-info">
+              <div class="music-info--title">
+                <span>اطلاعات آهنگ</span>
+              </div>
+
+              <div class="inputs music-info__inputs">
+                <div class="music-info__inputs--col">
+                  <label for="cover">
+                    <div class="uploader inputs__uploader">
+                      <div class="uploader__title">
+                        <span>بارگذاری عکس</span>
+                        <img
+                          class="icon"
+                          src="./assets/logos/main-icons/linear/camera.png"
+                          alt="camera"
+                        />
+                      </div>
+                    </div>
+                  </label>
+                  <input
+                    class="inputs__file"
+                    type="file"
+                    id="cover"
+                    accept="image/png, image/jpeg"
+                  />
+                </div>
+
+                <div
+                  class="inputs inputs--grid music-info__inputs--col"
+                  dir="RTL"
+                >
+                  <div class="textField inputs__textField">
+                    <label class="textField__label" for="name">نام آهنگ</label>
+                    <br />
+                    <input
+                      class="textField__input"
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="اشارات"
+                    />
+                  </div>
+                  <div class="textField inputs__textField">
+                    <label class="textField__label" for="name"
+                      >نام خواننده</label
+                    >
+                    <br />
+                    <input
+                      class="textField__input"
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="محمدرضا شجریان و همایون شجریان"
+                    />
+                  </div>
+                  <div class="textField inputs__textField">
+                    <label
+                      class="textField__label textField__label--topMargin"
+                      for="name"
+                      >نام آلبوم</label
+                    >
+                    <br />
+                    <input
+                      class="textField__input"
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="اشارات"
+                    />
+                  </div>
+                  <div class="textField inputs__textField">
+                    <label class="textField__label" for="name"
+                      >مدت زمان آهنگ آلبوم</label
+                    >
+                    <br />
+                    <input
+                      class="textField__input"
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="09:00"
+                    />
+                  </div>
+                </div>
+
+                <div class="textarea inputs__textarea" dir="RTL">
+                  <label class="textarea__label" for="textarea"
+                    >اطلاعات آهنگ</label
+                  >
+                  <br />
+                  <textarea id="textarea" rows="9">
+ لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                </textarea
+                  >
+                </div>
+              </div>
+
+              <div class="btns music-info__btns">
+                <button class="btns__cancel">لغو</button>
+                <button class="btns__save">ذخیره اطلاعات</button>
+              </div>
+            </div>
+          </form>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

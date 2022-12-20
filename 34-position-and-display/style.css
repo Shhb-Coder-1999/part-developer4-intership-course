@@ -1,0 +1,141 @@
+.container {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+}
+
+.grid-container {
+  margin-top: 100px;
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 10px;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.item1,
+.item2,
+.item3,
+.item5,
+.item6,
+.item4 {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  background-color: #2196f3;
+  border-style: none;
+}
+
+.item5 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.item6 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.item1 {
+  background-color: transparent;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0px;
+}
+
+.item1-1,
+.item1-2 {
+  width: 100%;
+  height: 50%;
+  background-color: #2196f3;
+  border-style: none;
+}
+
+.ele1,
+.ele2,
+.ele3 {
+  margin: auto;
+  position: absolute;
+  width: 25%;
+  height: 50%;
+  background-color: beige;
+  border: 3px solid #ffffff;
+  cursor: pointer;
+}
+
+.ele1 {
+  left: 56%;
+  top: 38%;
+  width: 5%;
+  height: 10%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  background-color: rgb(196, 126, 191);
+}
+
+.ele1:hover {
+  z-index: 6;
+}
+
+.ele2 {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 10%;
+  height: 20%;
+  z-index: 5;
+  background-color: rgb(242, 222, 240);
+}
+
+.ele2:hover {
+  z-index: 8;
+}
+
+.ele3 {
+  left: 44%;
+  width: 6.5%;
+  height: 13%;
+  z-index: 7;
+  transform: translate(-50%, -50%);
+  top: 63%;
+  background-color: rgb(196, 126, 191);
+}
+
+.sidenav {
+  position: fixed;
+  width: 60px;
+  height: 200px;
+  bottom: 35%;
+  right: -30px;
+  background-color: #2196f3;
+  color: #fff;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  border-radius: 20px 0px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  cursor: pointer;
+  transition: right 500ms ease;
+}
+
+.sidenav:hover {
+  right: 0px;
+  box-shadow: 5px 5px 5px #999;
+  transition: all 500ms ease;
+}
+
+.dot {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin: 0px auto;
+  gap: 10px 0px;
+}

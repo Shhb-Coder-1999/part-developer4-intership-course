@@ -1,0 +1,25 @@
+{
+  "name": "brogrammersframework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon ."
+  },
+  "author": "irvaniali79",
+  "license": "ISC",
+  "dependencies": {
+    "ajv": "^8.11.0",
+    "brogrammers": "^2.0.0",
+    "brogrammers_cookie": "^1.0.1",
+    "brogrammers_logger": "^3.0.0",
+    "cors": "^2.8.5",
+    "eventemitter3": "^4.0.7",
+    "express-rate-limit": "^6.6.0",
+    "nodemon": "^2.0.20",
+    "redis": "^4.3.1",
+    "sharp": "^0.31.0",
+    "svg-captcha": "^1.4.0"
+  }
+}

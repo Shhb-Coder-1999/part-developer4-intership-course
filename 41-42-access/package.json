@@ -1,0 +1,16 @@
+{
+  "name": "shahab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shahab.shafie",
+  "license": "ISC",
+  "dependencies": {
+    "eventemitter3": "^4.0.7",
+    "jsonwebtoken": "^8.5.1",
+    "redis": "^4.3.1"
+  }
+}

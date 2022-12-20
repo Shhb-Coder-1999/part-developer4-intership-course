@@ -1,0 +1,23 @@
+@mixin icon-style($url) {
+  filter: $grayFilter;
+  background-size: contain;
+  right: 16px;
+  top: 0px;
+  width: 24px;
+  height: 24px;
+  content: "";
+  position: absolute;
+  background-image: url($url);
+}
+
+@mixin btn-style($url) {
+  margin: auto 0px;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  border-style: none;
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  background-image: url($url);
+}

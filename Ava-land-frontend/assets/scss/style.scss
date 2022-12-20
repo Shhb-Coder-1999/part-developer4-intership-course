@@ -1,0 +1,31 @@
+// ----------------------------------------------------------------------
+// Base
+// ----------------------------------------------------------------------
+@import "../scss/base/fonts";
+@import "../scss/base/mixins";
+@import "../scss/base/variables";
+
+// ----------------------------------------------------------------------
+// Components
+// ----------------------------------------------------------------------
+@import "../scss/components/musicInfo";
+@import "../scss/components/playlistIntro";
+@import "../scss/components/playlistIntro";
+@import "../scss/components/playlistTable";
+@import "../scss/components/breadcrumbs";
+@import "../scss/components/uploadbox";
+
+// ----------------------------------------------------------------------
+// Layout
+// ----------------------------------------------------------------------
+@import "../scss/layout/navigation";
+@import "../scss/layout/sidebar";
+@import "../scss/layout/musicNavigation";
+@import "../scss/layout/app";
+@import "../scss/layout/header";
+
+body {
+  background-color: $dark;
+  margin: 0px;
+  height: 100vh;
+}

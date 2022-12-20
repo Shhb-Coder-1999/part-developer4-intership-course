@@ -1,0 +1,220 @@
+.musicNav {
+  direction: rtl;
+  position: fixed;
+  z-index: 10000;
+  bottom: 0;
+  height: 88px;
+  width: 100%;
+  display: flex;
+  background-color: $dark4;
+  backdrop-filter: blur(30px);
+
+  &__musicDetails {
+    margin: 12px 130px 12px 85px;
+  }
+
+  &__musicOperations {
+    margin: auto 10px;
+  }
+
+  .musicOperations {
+    display: flex;
+
+    &__duration {
+      color: $pure-white;
+      margin: auto 70px;
+    }
+  }
+
+  .range {
+    direction: ltr;
+    &__input {
+      cursor: pointer;
+      background: linear-gradient(
+        to right,
+        $orange 0%,
+        $orange 50%,
+        #fff 50%,
+        #fff 100%
+      );
+      border-radius: 8px;
+      height: 7px;
+      width: 400px;
+      outline: none;
+      transition: background 450ms ease-in;
+      -webkit-appearance: none;
+
+      &::range-thumb {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        background-color: white;
+        border: 2px solid #1976d2;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+      }
+      &::-webkit-slider-thumb {
+        background-color: $pure-white;
+        border: solid 6px $pure-white;
+        border-radius: 0;
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+        -webkit-appearance: none;
+      }
+    }
+  }
+
+  .duration {
+    display: flex;
+    &__remainTime {
+      margin-right: 12px;
+    }
+    &__totalTime {
+      margin-left: 12px;
+    }
+  }
+  .musicDetails {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    // background-color: aliceblue;
+
+    &__titles {
+      margin: auto 0px;
+    }
+    &__tracksBtns {
+      margin: auto 0px;
+      margin-right: 35px;
+    }
+  }
+
+  .figure {
+    margin: 0px;
+  }
+
+  .titles {
+    padding: 0px 10px;
+    &--h10 {
+      font-size: 14px;
+      font-weight: 600;
+      color: $pure-white;
+    }
+    &--sub {
+      font-size: 10px;
+      font-weight: 600;
+      color: $gray;
+    }
+  }
+
+  .volume {
+    margin: auto 0px;
+    position: relative;
+    &::after {
+      background-size: contain;
+      left: -34px;
+      bottom: 0px;
+      width: 24px;
+      height: 24px;
+      content: "";
+      position: absolute;
+      background-image: url(../logos/svg/bold/volume-high.svg);
+      background-position: center;
+    }
+    &__range {
+      cursor: pointer;
+      width: 90px;
+      height: 7px;
+      -webkit-appearance: none;
+      background: $gray;
+      outline: none;
+      border-radius: 15px;
+      overflow: hidden;
+
+      &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 11px;
+        height: 7px;
+        border-radius: 25%;
+        background: $pure-white;
+        cursor: pointer;
+        box-shadow: -407px 0 0 400px $pure-white;
+      }
+    }
+  }
+
+  .tracksBtns {
+    display: flex;
+  }
+
+  .previousBtn {
+    @include btn-style("../logos/svg/bold/previous.svg");
+  }
+
+  .nextBtn {
+    @include btn-style("../logos/svg/bold/next.svg");
+  }
+
+  .playBtn {
+    &--playIcon {
+      margin: auto 12px;
+      cursor: pointer;
+      display: block;
+      border-style: none;
+      border-radius: 50%;
+      background-color: $dark5;
+      width: 30px;
+      height: 30px;
+      background-image: url(../logos/svg/bold/pause.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 10px 12px;
+    }
+    &__input {
+      display: none;
+    }
+    &__input:checked + .playBtn--playIcon {
+      background-image: url(../logos/svg/bold/playIcon.svg);
+    }
+  }
+
+  .options {
+    margin: auto 80px auto 0px;
+    display: flex;
+    &__like {
+      margin-left: 20px;
+    }
+  }
+
+  .like {
+    &__btn {
+      display: block;
+      background: transparent;
+      cursor: pointer;
+      border-style: none;
+      width: 24px;
+      height: 24px;
+      background-image: url(../logos/svg/bold/heart.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    &__input {
+      display: none;
+    }
+    &__input:checked + .like__btn {
+      background-image: url(../logos/svg/bold/orangeHeart.svg);
+    }
+  }
+  .option {
+    padding-top: 5px;
+    &__btn {
+      background: transparent;
+      cursor: pointer;
+      border-style: none;
+      width: 24px;
+      height: 24px;
+      background-image: url(../logos/svg/bold/3dot.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}

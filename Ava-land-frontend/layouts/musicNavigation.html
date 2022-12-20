@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="../app.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="musicNav">
+      <div class="musicDetails musicNav__musicDetails">
+        <figure class="figure musicDetails__figure">
+          <img
+            class="figure__img"
+            src="../assets/images/miniBatelCover.png"
+            alt="batelCover"
+          />
+        </figure>
+        <div class="titles musicDetails__titles">
+          <span class="titles--h10">باطل</span><br />
+          <span class="titles--sub">شادمهر عقیلی</span>
+        </div>
+      </div>
+
+      <div class="musicOperations musicNav__musicOperations">
+        <div class="volume musicOperations__volume">
+          <input
+            class="volume__range"
+            type="range"
+            min="0"
+            max="100"
+            value="15"
+          />
+        </div>
+        <div class="duration musicOperations__duration">
+          <div class="duration__totalTime"><span>۴:۵۹</span></div>
+          <div class="range duration__range">
+            <input
+              type="range"
+              min="1"
+              max="100"
+              value="50"
+              class="range__input"
+              id="myRange"
+              readonly
+            />
+          </div>
+          <div class="duration__remainTime"><span>۲:۳۸</span></div>
+        </div>
+        <div class="tracksBtns musicDetails__tracksBtns">
+          <button class="nextBtn tracksBtns__nextBtn"></button>
+          <div class="playBtn tracksBtns__playBtn">
+            <input
+              class="playBtn__input"
+              type="checkbox"
+              name="play"
+              id="play"
+            />
+            <label for="play" class="playBtn--playIcon"></label>
+          </div>
+          <button class="previousBtn tracksBtns__previousBtn"></button>
+        </div>
+        <div class="options musicOperations__options">
+          <div class="like options__like">
+            <input
+              class="like__input"
+              type="checkbox"
+              name="heart"
+              id="navHeart"
+              checked
+            />
+            <label for="navHeart" class="like__btn"></label>
+          </div>
+
+          <button class="option__btn"></button>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>

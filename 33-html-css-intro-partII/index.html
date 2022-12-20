@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>33-html-css-intro-partII</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h2>Emplyee Intrests survey form</h2>
+            <form>
+                <div class="name-sec">
+                    <label for="name">Enter your name:</label>
+                    <input type="text" id="name">
+                </div>
+    
+                <div class="department-sec">
+                    <label for="department">Enter your department:</label>
+                    <input type="text" id="department">
+                </div>
+    
+                <div class="department-sec">
+                    <label>Tell us a little about yourself:</label>
+                    <textarea rows="5"></textarea>
+                </div>
+    
+                <div class="ex-sec">
+                    <label>Do you exercise at home?</label>
+                     <input type="radio" id="Yes" name="exerciseQ" value="Yes">
+                     <label for="html">Yes</label>
+                      <input type="radio" id="No" name="exerciseQ" value="No">
+                      <label for="No">No</label>
+                </div>
+    
+                <div class="fav-topis">
+                    <label>how do you like to read about <span class="bold"> your favorite topics</span>?</label><br><br>
+                    <input type="checkbox" id="option1" name="option1" value="Books">
+                    <label for="option1">Books</label>
+                    <input type="checkbox" id="option2" name="option2" value="resources">
+                    <label for="option2">Online resources</label>
+                    <input type="checkbox" id="option3" name="option3" value="apps">
+                    <label for="option4">Phone apps</label>
+                    <input type="checkbox" id="option4" name="option4" value="Magazines">
+                    <label for="option4">Magazines</label>
+                </div>
+    
+                <div class="movie">
+                    <label>What genre of movies do you like?</label>
+                    <select name="genre" id="genre">
+                        <option value="comedy">comedy</option>
+                        <option value="horror">horror</option>
+                      </select>
+                </div>
+    
+                <input type="submit" value="Submit form" class="submit">
+            </form>
+        </div>
+
+        <div class="transition-sec">
+            <div class="shelf">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

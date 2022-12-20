@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="playlistTable main__playlistTable">
+      <table class="table playlistTable__table" cellspacing="0">
+        <colgroup class="colgroup table__colgroup">
+          <col class="colgroup--10" style="width: 6%" />
+          <col class="colgroup--30" style="width: 28%" />
+          <col class="colgroup--30" style="width: 28%" />
+          <col class="colgroup--30" style="width: 28%" />
+          <col class="colgroup--5" style="width: 5%" />
+          <col class="colgroup--5" style="width: 4%" />
+          <col class="colgroup--5" style="width: 4%" />
+        </colgroup>
+
+        <thead class="thead table__thead">
+          <tr class="tHeader thead__tHeader">
+            <th class="tHeader__hash"><span class="sort"></span>#</th>
+            <th class="tHeader__title">عنوان</th>
+            <th class="tHeader__album">آلبوم</th>
+            <th class="tHeader__releaseTime">تاریخ انتشار</th>
+            <th class="tHeader__duration"></th>
+            <th class="tHeader__like"></th>
+            <th class="tHeader__option"></th>
+          </tr>
+        </thead>
+
+        <tbody class="tbody table__tbody">
+          <tr class="tr tbody__tr">
+            <td class="tr__num">۰۱</td>
+            <td class="title tr__title">
+              <div class="title__img">
+                <img src="../../images/platlist-intro-bg.png" alt="" />
+              </div>
+              <div class="details title__details">
+                <span class="details--h10">دستبند</span><br />
+                <span class="details--sub">رهام</span>
+              </div>
+            </td>
+            <td class="tr__album"><span>دربند</span></td>
+            <td class="tr__releaseTime"><span>۲۵ روز پیش</span></td>
+            <td class="tr__duration"><span>۰۴:۴۲</span></td>
+            <td class="like tr__like">
+              <input
+                class="like__input"
+                type="checkbox"
+                name="heart"
+                id="heart1"
+              />
+              <label for="heart1" class="like__btn"></label>
+            </td>
+            <td class="option tr__option">
+              <button class="option__btn"></button>
+            </td>
+          </tr>
+
+          <tr class="tr tbody__tr">
+            <td class="tr__num">
+              <img src="./assets/logos/svg/bold/equalizer.svg" alt="" />
+            </td>
+            <td class="title tr__title">
+              <div class="img1 title__img1">
+                <img
+                  class="img1__play"
+                  src="./assets/logos/svg/bold/orangePause.svg"
+                  alt=""
+                />
+              </div>
+              <div class="details title__details">
+                <span class="details--h10">باطل</span><br />
+                <span class="details--sub">شادمهر عقیلی</span>
+              </div>
+            </td>
+            <td class="tr__album"><span>تک آهنگ</span></td>
+            <td class="tr__releaseTime"><span>۲ ساعت پیش</span></td>
+            <td class="tr__duration tr__duration--selected">
+              <span>۰۲:۲۳</span>
+            </td>
+            <td class="like tr__like">
+              <input
+                class="like__input"
+                type="checkbox"
+                name="heart"
+                id="heart2"
+                checked
+              />
+              <label for="heart2" class="like__btn"></label>
+            </td>
+            <td class="option tr__option">
+              <button class="option__btn"></button>
+            </td>
+          </tr>
+
+          <tr class="tr tbody__tr">
+            <td class="tr__num">۰۳</td>
+            <td class="title tr__title">
+              <div class="title__img3"></div>
+              <div class="details title__details">
+                <span class="details--h10">عیبی نداره</span><br />
+                <span class="details--sub">talk down</span>
+              </div>
+            </td>
+            <td class="tr__album"><span>عیبی نداره</span></td>
+            <td class="tr__releaseTime"><span>۲۰ روز پیش</span></td>
+            <td class="tr__duration"><span>۰۴:۴۲</span></td>
+            <td class="like tr__like">
+              <input
+                class="like__input"
+                type="checkbox"
+                name="heart"
+                id="heart3"
+              />
+              <label for="heart3" class="like__btn"></label>
+            </td>
+            <td class="option tr__option">
+              <button class="option__btn"></button>
+            </td>
+          </tr>
+
+          <tr class="tr tbody__tr">
+            <td class="tr__num">۰۴</td>
+            <td class="title tr__title">
+              <div class="title__img4"></div>
+              <div class="details title__details">
+                <span class="details--h10">بی معرفت</span><br />
+                <span class="details--sub">رهام</span>
+              </div>
+            </td>
+            <td class="tr__album"><span>بی معرفت</span></td>
+            <td class="tr__releaseTime"><span>۱۲ ساعت پیش </span></td>
+            <td class="tr__duration"><span>۰۴:۴۲</span></td>
+            <td class="like tr__like">
+              <input
+                class="like__input"
+                type="checkbox"
+                name="heart"
+                id="heart4"
+              />
+              <label for="heart4" class="like__btn"></label>
+            </td>
+            <td class="option tr__option">
+              <button class="option__btn"></button>
+            </td>
+          </tr>
+
+          <tr class="tr tbody__tr">
+            <td class="tr__num">۰۵</td>
+            <td class="title tr__title">
+              <div class="title__img5"></div>
+              <div class="details title__details">
+                <span class="details--h10">الکی </span><br />
+                <span class="details--sub">علی تی</span>
+              </div>
+            </td>
+            <td class="tr__album"><span>واقعی</span></td>
+            <td class="tr__releaseTime"><span>۲ روز پیش </span></td>
+            <td class="tr__duration"><span>۰۴:۴۲</span></td>
+            <td class="like tr__like">
+              <input
+                class="like__input"
+                type="checkbox"
+                name="heart"
+                id="heart5"
+                checked
+              />
+              <label for="heart5" class="like__btn"></label>
+            </td>
+            <td class="option tr__option">
+              <button class="option__btn"></button>
+            </td>
+          </tr>
+
+          <tr class="tr tbody__tr">
+            <td class="tr__num">۰۶</td>
+            <td class="title tr__title">
+              <div class="title__img6"></div>
+              <div class="details title__details">
+                <span class="details--h10">بطری</span><br />
+                <span class="details--sub">talk down</span>
+              </div>
+            </td>
+            <td class="tr__album"><span>تک آهنگ </span></td>
+            <td class="tr__releaseTime"><span>۲ روز پیش </span></td>
+            <td class="tr__duration"><span>۰۴:۴۲</span></td>
+            <td class="like tr__like">
+              <input
+                class="like__input"
+                type="checkbox"
+                name="heart"
+                id="heart6"
+              />
+              <label for="heart6" class="like__btn"></label>
+            </td>
+            <td class="option tr__option">
+              <button class="option__btn"></button>
+            </td>
+          </tr>
+
+          <tr class="tr tbody__tr">
+            <td class="tr__num">۰۷</td>
+            <td class="title tr__title">
+              <div class="title__img7"></div>
+              <div class="details title__details">
+                <span class="details--h10">سیگار پشت سیگار</span><br />
+                <span class="details--sub"> رضا یزدانی</span>
+              </div>
+            </td>
+            <td class="tr__album"><span>تهران تهران</span></td>
+            <td class="tr__releaseTime"><span>۲۱ ساعت پیش </span></td>
+            <td class="tr__duration"><span>۰۴:۴۲</span></td>
+            <td class="like tr__like">
+              <input
+                class="like__input"
+                type="checkbox"
+                name="heart"
+                id="heart7"
+              />
+              <label for="heart7" class="like__btn"></label>
+            </td>
+            <td class="option tr__option">
+              <button class="option__btn"></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

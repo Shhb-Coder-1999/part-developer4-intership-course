@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="http://fonts.cdnfonts.com/css/roboto" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="./app.js"></script>
+    <title>Playlist-page</title>
+  </head>
+  <body>
+    <div class="app app--dark" dir="RTL">
+      <nav class="musicNav">
+        <div class="musicDetails musicNav__musicDetails">
+          <figure class="figure musicDetails__figure">
+            <img
+              class="figure__img"
+              src="./assets/images/miniBatelCover.png"
+              alt="batelCover"
+            />
+          </figure>
+          <div class="titles musicDetails__titles">
+            <span class="titles--h10">باطل</span><br />
+            <span class="titles--sub">شادمهر عقیلی</span>
+          </div>
+        </div>
+
+        <div class="musicOperations musicNav__musicOperations">
+          <div class="volume musicOperations__volume">
+            <input
+              class="volume__range"
+              type="range"
+              min="0"
+              max="100"
+              value="15"
+            />
+          </div>
+          <div class="duration musicOperations__duration">
+            <div class="duration__totalTime"><span>۴:۵۹</span></div>
+            <div class="range duration__range">
+              <input
+                type="range"
+                min="1"
+                max="100"
+                value="50"
+                class="range__input"
+                id="myRange"
+                readonly
+              />
+            </div>
+            <div class="duration__remainTime"><span>۲:۳۸</span></div>
+          </div>
+          <div class="tracksBtns musicDetails__tracksBtns">
+            <button class="nextBtn tracksBtns__nextBtn"></button>
+            <div class="playBtn tracksBtns__playBtn">
+              <input
+                class="playBtn__input"
+                type="checkbox"
+                name="play"
+                id="navPlay"
+              />
+              <label for="navPlay" class="playBtn--playIcon"></label>
+            </div>
+            <button class="previousBtn tracksBtns__previousBtn"></button>
+          </div>
+          <div class="options musicOperations__options">
+            <div class="like options__like">
+              <input
+                class="like__input"
+                type="checkbox"
+                name="heart"
+                id="navHeart"
+                checked
+              />
+              <label for="navHeart" class="like__btn"></label>
+            </div>
+
+            <button class="option__btn"></button>
+          </div>
+        </div>
+      </nav>
+      <aside class="sidebar sidebar_background">
+        <div class="logoconteiner sidebar__logoconteiner sidebar--logo">
+          <figure class="logofigure logofigure__icon">
+            <img
+              class="logo"
+              src="./assets/logos/avaland-logo.png"
+              alt="avaland.favico"
+            />
+          </figure>
+          <figure class="logofigure logofigure__player">
+            <img class="logo" src="./assets/images/player.png" alt="player" />
+          </figure>
+          <figure class="logofigure">
+            <img
+              class="logo"
+              src="./assets/images/music-player.png"
+              alt="music-player"
+            />
+          </figure>
+        </div>
+
+        <ul class="list sidebar__list">
+          <li class="item list__item item--homeIcon">
+            <a class="link">صفحه‌اصلی</a>
+          </li>
+          <li class="item list__item item--searchIcon">
+            <a class="link">جستجو</a>
+          </li>
+          <li class="item list__item item--playIcon">
+            <a class="link">پخش‌آهنگ</a>
+          </li>
+          <li class="item list__item item--likeIcon">
+            <a class="link">محبوب‌ترین‌ها</a>
+          </li>
+          <li class="item list__item item--listIcon">
+            <a class="link">لیست‌پخش‌منتخب</a>
+          </li>
+          <li class="item list__item item--uploadIcon item--active">
+            <a class="link">آپلودآهنگ</a>
+          </li>
+        </ul>
+      </aside>
+      <div class="app__container">
+        <header class="header container__header">
+          <nav class="nav header__nav" dir="rtl">
+            <div class="searchbox nav__searchbox">
+              <figure class="searchfigurelogo searchbox__searchfigurelogo">
+                <img
+                  class="searchfigurelogo__searchlogo"
+                  src="./assets/logos/svg/linear/search-normal.svg"
+                  alt="search-normal"
+                />
+              </figure>
+              <input
+                type="text"
+                name=""
+                placeholder="جستجو..."
+                id=""
+                class="searchbox__searchinput"
+              />
+              <div class="btns searchbox__btns">
+                <input type="checkbox" name="avaz" id="avaz" />
+                <label for="avaz" class="avaz btn btns__btn"><p>آواز</p></label>
+
+                <input type="checkbox" name="irani" id="irani" />
+                <label for="irani" class="irani btn btns__btn">ایرانی</label>
+
+                <input type="checkbox" name="sonati" id="sonati" />
+                <label for="sonati" class="sonati btn btns__btn">سنتی</label>
+              </div>
+              <hr class="hr searchbox__hr" />
+              <div class="filterparent searchbox__filterparent">
+                <button class="filter filterdesktop filterparent__filter">
+                  فیلتر
+                </button>
+                <button
+                  class="filter filtermobile filterparent__filter"
+                ></button>
+              </div>
+            </div>
+
+            <div class="profilecontainer nav__profilecontainer">
+              <div class="profile profilecontainer__profile">
+                <a class="number profile__number">۰۹۱۵۴۰۶۴۹۸۷</a>
+                <figure class="profilefigure number__profilefigure">
+                  <img
+                    src="./assets/logos/bottom-arrow.png"
+                    alt="bottom-arrow"
+                  />
+                </figure>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <main class="main">
+          <div class="playlistIntro main__playlist">
+            <div class="cover playlistIntro__cover"></div>
+            <div class="description playlistIntro__description">
+              <div class="banner description__banner">
+                <span class="banner__text">لیست پخش</span>
+              </div>
+              <div class="title description__title">
+                <h2 class="title--h2">گلچین شاد مجلسی هفته</h2>
+              </div>
+              <div class="details description__details">
+                <div class="songCnt details__songCnt">
+                  <img
+                    class="songCnt__icon"
+                    src="./assets/logos/main-icons/linear/musicFilter.png"
+                    alt=""
+                  />
+                  <span class="songCnt__text"> ۱۲۰ ترانه</span>
+                </div>
+                <hr class="verHr details__hr" />
+                <div class="duration details__duration">
+                  <img
+                    class="duration__icon"
+                    src="./assets/logos/main-icons/linear/orangeClock.png"
+                    alt=""
+                  />
+                  <span class="duration__text">
+                    ۶ ساعت و ۴۰ دقیقه و ۲۱ ثانیه
+                  </span>
+                </div>
+              </div>
+              <div class="btns description__btns">
+                <input
+                  class="btns__input"
+                  type="checkbox"
+                  name="play"
+                  id="play"
+                />
+                <label for="play" class="btns--playIcon"></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="playlistTable main__playlistTable">
+            <table class="table playlistTable__table" cellspacing="0">
+              <colgroup class="colgroup table__colgroup">
+                <col class="colgroup--10" style="width: 6%" />
+                <col class="colgroup--30" style="width: 28%" />
+                <col class="colgroup--30" style="width: 28%" />
+                <col class="colgroup--30" style="width: 28%" />
+                <col class="colgroup--5" style="width: 5%" />
+                <col class="colgroup--5" style="width: 4%" />
+                <col class="colgroup--5" style="width: 4%" />
+              </colgroup>
+
+              <thead class="thead table__thead">
+                <tr class="tHeader thead__tHeader">
+                  <th class="tHeader__hash"><span class="sort"></span>#</th>
+                  <th class="tHeader__title">عنوان</th>
+                  <th class="tHeader__album">آلبوم</th>
+                  <th class="tHeader__releaseTime">تاریخ انتشار</th>
+                  <th class="tHeader__duration"></th>
+                  <th class="tHeader__like"></th>
+                  <th class="tHeader__option"></th>
+                </tr>
+              </thead>
+
+              <tbody class="tbody table__tbody">
+                <tr class="tr tbody__tr">
+                  <td class="tr__num">۰۱</td>
+                  <td class="title tr__title">
+                    <div class="title__img">
+                      <img src="../../images/platlist-intro-bg.png" alt="" />
+                    </div>
+                    <div class="details title__details">
+                      <span class="details--h10">دستبند</span><br />
+                      <span class="details--sub">رهام</span>
+                    </div>
+                  </td>
+                  <td class="tr__album"><span>دربند</span></td>
+                  <td class="tr__releaseTime"><span>۲۵ روز پیش</span></td>
+                  <td class="tr__duration"><span>۰۴:۴۲</span></td>
+                  <td class="like tr__like">
+                    <input
+                      class="like__input"
+                      type="checkbox"
+                      name="heart"
+                      id="heart1"
+                    />
+                    <label for="heart1" class="like__btn"></label>
+                  </td>
+                  <td class="option tr__option">
+                    <button class="option__btn"></button>
+                  </td>
+                </tr>
+
+                <tr class="tr tbody__tr">
+                  <td class="tr__num">
+                    <img src="./assets/logos/svg/bold/equalizer.svg" alt="" />
+                  </td>
+                  <td class="title tr__title">
+                    <div class="img1 title__img1">
+                      <img
+                        class="img1__play"
+                        src="./assets/logos/svg/bold/orangePause.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="details title__details">
+                      <span class="details--h10">باطل</span><br />
+                      <span class="details--sub">شادمهر عقیلی</span>
+                    </div>
+                  </td>
+                  <td class="tr__album"><span>تک آهنگ</span></td>
+                  <td class="tr__releaseTime"><span>۲ ساعت پیش</span></td>
+                  <td class="tr__duration tr__duration--selected">
+                    <span>۰۲:۲۳</span>
+                  </td>
+                  <td class="like tr__like">
+                    <input
+                      class="like__input"
+                      type="checkbox"
+                      name="heart"
+                      id="heart2"
+                      checked
+                    />
+                    <label for="heart2" class="like__btn"></label>
+                  </td>
+                  <td class="option tr__option">
+                    <button class="option__btn"></button>
+                  </td>
+                </tr>
+
+                <tr class="tr tbody__tr">
+                  <td class="tr__num">۰۳</td>
+                  <td class="title tr__title">
+                    <div class="title__img3"></div>
+                    <div class="details title__details">
+                      <span class="details--h10">عیبی نداره</span><br />
+                      <span class="details--sub">talk down</span>
+                    </div>
+                  </td>
+                  <td class="tr__album"><span>عیبی نداره</span></td>
+                  <td class="tr__releaseTime"><span>۲۰ روز پیش</span></td>
+                  <td class="tr__duration"><span>۰۴:۴۲</span></td>
+                  <td class="like tr__like">
+                    <input
+                      class="like__input"
+                      type="checkbox"
+                      name="heart"
+                      id="heart3"
+                    />
+                    <label for="heart3" class="like__btn"></label>
+                  </td>
+                  <td class="option tr__option">
+                    <button class="option__btn"></button>
+                  </td>
+                </tr>
+
+                <tr class="tr tbody__tr">
+                  <td class="tr__num">۰۴</td>
+                  <td class="title tr__title">
+                    <div class="title__img4"></div>
+                    <div class="details title__details">
+                      <span class="details--h10">بی معرفت</span><br />
+                      <span class="details--sub">رهام</span>
+                    </div>
+                  </td>
+                  <td class="tr__album"><span>بی معرفت</span></td>
+                  <td class="tr__releaseTime"><span>۱۲ ساعت پیش </span></td>
+                  <td class="tr__duration"><span>۰۴:۴۲</span></td>
+                  <td class="like tr__like">
+                    <input
+                      class="like__input"
+                      type="checkbox"
+                      name="heart"
+                      id="heart4"
+                    />
+                    <label for="heart4" class="like__btn"></label>
+                  </td>
+                  <td class="option tr__option">
+                    <button class="option__btn"></button>
+                  </td>
+                </tr>
+
+                <tr class="tr tbody__tr">
+                  <td class="tr__num">۰۵</td>
+                  <td class="title tr__title">
+                    <div class="title__img5"></div>
+                    <div class="details title__details">
+                      <span class="details--h10">الکی </span><br />
+                      <span class="details--sub">علی تی</span>
+                    </div>
+                  </td>
+                  <td class="tr__album"><span>واقعی</span></td>
+                  <td class="tr__releaseTime"><span>۲ روز پیش </span></td>
+                  <td class="tr__duration"><span>۰۴:۴۲</span></td>
+                  <td class="like tr__like">
+                    <input
+                      class="like__input"
+                      type="checkbox"
+                      name="heart"
+                      id="heart5"
+                      checked
+                    />
+                    <label for="heart5" class="like__btn"></label>
+                  </td>
+                  <td class="option tr__option">
+                    <button class="option__btn"></button>
+                  </td>
+                </tr>
+
+                <tr class="tr tbody__tr">
+                  <td class="tr__num">۰۶</td>
+                  <td class="title tr__title">
+                    <div class="title__img6"></div>
+                    <div class="details title__details">
+                      <span class="details--h10">بطری</span><br />
+                      <span class="details--sub">talk down</span>
+                    </div>
+                  </td>
+                  <td class="tr__album"><span>تک آهنگ </span></td>
+                  <td class="tr__releaseTime"><span>۲ روز پیش </span></td>
+                  <td class="tr__duration"><span>۰۴:۴۲</span></td>
+                  <td class="like tr__like">
+                    <input
+                      class="like__input"
+                      type="checkbox"
+                      name="heart"
+                      id="heart6"
+                    />
+                    <label for="heart6" class="like__btn"></label>
+                  </td>
+                  <td class="option tr__option">
+                    <button class="option__btn"></button>
+                  </td>
+                </tr>
+
+                <tr class="tr tbody__tr">
+                  <td class="tr__num">۰۷</td>
+                  <td class="title tr__title">
+                    <div class="title__img7"></div>
+                    <div class="details title__details">
+                      <span class="details--h10">سیگار پشت سیگار</span><br />
+                      <span class="details--sub"> رضا یزدانی</span>
+                    </div>
+                  </td>
+                  <td class="tr__album"><span>تهران تهران</span></td>
+                  <td class="tr__releaseTime"><span>۲۱ ساعت پیش </span></td>
+                  <td class="tr__duration"><span>۰۴:۴۲</span></td>
+                  <td class="like tr__like">
+                    <input
+                      class="like__input"
+                      type="checkbox"
+                      name="heart"
+                      id="heart7"
+                    />
+                    <label for="heart7" class="like__btn"></label>
+                  </td>
+                  <td class="option tr__option">
+                    <button class="option__btn"></button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "name": "avaland",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+  },
+  "dependencies": {
+    "vee-validate": "^4.6.9",
+    "vue": "^3.2.38",
+    "vue-carousel": "^0.18.0",
+    "vue-router": "^4.1.5",
+    "vue3-carousel": "^0.1.46",
+    "vue3-google-login": "^2.0.12",
+    "vuex": "^4.0.2",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.1.4",
+    "@vitejs/plugin-vue": "^3.0.3",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "eslint": "^8.22.0",
+    "eslint-plugin-vue": "^9.3.0",
+    "prettier": "^2.7.1",
+    "sass": "^1.54.9",
+    "sass-loader": "^13.0.2",
+    "vite": "^3.0.9"
+  }
+}
